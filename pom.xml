@@ -23,7 +23,20 @@
 		<sonar.password>admin</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+           <distributionManagement>
+          <repository>
+              <id>nexus</id>
+              <name>facebook-release Nexus Repository</name>
+              <url>http://3.108.217.3:8081/repository/facebook-release/</url>
+            </repository>
 
+            <snapshotRepository>
+              <id>nexus</id>
+              <name>facebook-snapshot Nexus Repository </name>
+              <url>http://3.108.217.3:8081/repository/facebook-snapshot/</url>
+            </snapshotRepository>
+
+	
 	<dependencies>
 
 		<dependency>
